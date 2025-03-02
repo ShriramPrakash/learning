@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-
+import time
 
 class BasePage:
 
@@ -51,6 +51,7 @@ class BasePage:
 
     def display_status(self, locator_type, locator_value):
         element = self.get_element(locator_type, locator_value)
+        time.sleep(2)
         return element.is_displayed()
 
 
