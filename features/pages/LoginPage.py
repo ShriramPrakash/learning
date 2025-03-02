@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 
 from features.pages.AccountPage import AccountPage
 from features.pages.BasePage import BasePage
-
+import time
 
 class LoginPage(BasePage):
 
@@ -23,6 +23,7 @@ class LoginPage(BasePage):
     def click_on_login_button(self):
         self.click_on_element("login_button_xpath",self.login_button_xpath)
         return AccountPage(self.driver)
+        time.sleep(2)
 
     def display_status_of_warning_message(self,expected_warning_text):
         return self.retrieved_element_text_contains("warning_message_xpath",self.warning_message_xpath, expected_warning_text)

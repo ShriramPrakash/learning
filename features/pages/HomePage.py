@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+import time
 
 from features.pages.BasePage import BasePage
 from features.pages.LoginPage import LoginPage
@@ -36,5 +37,6 @@ class HomePage(BasePage):
 
     def click_on_search_button(self):
         self.click_on_element("search_button_xpath", self.search_button_xpath)
+        time.sleep(2)
         return SearchPage(self.driver)
 
