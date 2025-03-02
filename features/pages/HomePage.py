@@ -6,6 +6,7 @@ from features.pages.LoginPage import LoginPage
 from features.pages.RegisterPage import RegisterPage
 from features.pages.SearchPage import SearchPage
 I am the other user
+I am not the other user
 
 class HomePage(BasePage):
 
