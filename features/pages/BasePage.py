@@ -52,6 +52,7 @@ class BasePage:
     def display_status(self, locator_type, locator_value):
         element = self.get_element(locator_type, locator_value)
         time.sleep(2)
+        time.sleep(3)
         return element.is_displayed()
 
 
