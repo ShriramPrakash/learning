@@ -28,6 +28,7 @@ class LoginPage(BasePage):
     def display_status_of_warning_message(self,expected_warning_text):
         return self.retrieved_element_text_contains("warning_message_xpath",self.warning_message_xpath, expected_warning_text)
 
+    This is feature1
 
 
 
